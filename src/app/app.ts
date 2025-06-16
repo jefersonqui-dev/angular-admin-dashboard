@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { TableUsers } from "./table-users/table-users";
+import { TableAreas } from './table-areas/table-areas';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [TableUsers,TableAreas],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

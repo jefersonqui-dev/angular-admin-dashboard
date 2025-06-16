@@ -1,0 +1,17 @@
+<h1>Lista de Usuarios</h1>
+<table border="1" [cellPadding]="1" [cellSpacing]="1">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>NOMBRE</th>
+            <th>CORREO</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let x of usuario">
+            <td>{{x.id}}</td>
+            <td>{{x.nombre}}</td>
+            <td>{{x.correo}}</td>
+        </tr>
+    </tbody>
+</table>
