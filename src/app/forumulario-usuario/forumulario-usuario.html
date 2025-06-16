@@ -1,0 +1,18 @@
+<h2>Formulario de Usuario</h2>
+<form (ngSubmit)="enviar()" #formUsuario="ngForm">
+    <div class="form-group">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" [(ngModel)]="usuario.nombre" name="nombre" required>
+    </div>
+    <div class="form-group">
+        <label for="correo">Correo</label>
+        <input type="email" id="correo" [(ngModel)]="usuario.correo" name="correo" required>
+    </div>
+    <button type="submit" [disabled]="!formUsuario.valid">Enviar</button>
+</form>
+
+<div class="contador-container">
+    <h2>{{contador}}</h2>
+    <button (click)="incrementar()" class="btn-incrementar">+</button>
+    <button (click)="decrementar()" class="btn-decrementar">-</button>
+</div>
